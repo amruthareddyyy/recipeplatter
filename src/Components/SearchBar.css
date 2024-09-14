@@ -1,0 +1,50 @@
+/* SearchBar.css */
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  background: rgba(255,255,255,0);
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border with 10% opacity */
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0); /* White background with 80% opacity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow with 20% opacity */
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input {
+  border: none;
+  padding: 11px 15px;
+  font-size: 16px;
+  width: 500px;
+  outline:invert;
+  border-radius: 25px 0 0 25px;
+  background-color: #e9ecef70; /* Same transparent background as container */
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow:inset;
+}
+
+.search-button {
+  border: none;
+  background-color: #000; /* Semi-transparent button background */
+  color: white;
+  padding: 15px 15px;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgb(182, 181, 181); /* Fully opaque on hover */
+}
