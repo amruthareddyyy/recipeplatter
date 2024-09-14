@@ -1,0 +1,49 @@
+/* Video Background Styling */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1; /* Ensures the video stays behind all other content */
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ensures the video fills the screen without distortion */
+}
+
+/* Content Styling */
+.content {
+  position: relative;
+  z-index: 1; /* Keeps the content above the video */
+}
+
+/* Existing Styles */
+.container {
+  margin-top: 80px;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+  margin-bottom: 8px;
+}
+
+.searchbar-container {
+  margin-top: 100px; /* Adjusted from 10000vh to prevent it from being too far down */
+}
